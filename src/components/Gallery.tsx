@@ -1,12 +1,12 @@
 const galleryItems = [
-  { label: 'Laser Therapy', img: 'https://images.pexels.com/photos/4586727/pexels-photo-4586727.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
-  { label: 'Facial Treatment', img: 'https://images.pexels.com/photos/7581072/pexels-photo-7581072.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
-  { label: 'Skin Care', img: 'https://images.pexels.com/photos/39392892/pexels-photo-39392892.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
-  { label: 'Anti-Aging', img: 'https://images.pexels.com/photos/39452544/pexels-photo-39452544.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
-  { label: 'Clinical Care', img: 'https://images.pexels.com/photos/7789612/pexels-photo-7789612.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
-  { label: 'Aesthetic Procedure', img: 'https://images.pexels.com/photos/5619456/pexels-photo-5619456.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
-  { label: 'Skincare Products', img: 'https://images.pexels.com/photos/39448506/pexels-photo-39448506.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
-  { label: 'Dermatology', img: 'https://images.pexels.com/photos/38822007/pexels-photo-38822007.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
+  { label: 'Laser Therapy', img: '/gallery/gallery-1.png' },
+  { label: 'Facial Treatment', img: '/gallery/gallery-2.png' },
+  { label: 'Skin Care', img: '/gallery/gallery-3.png' },
+  { label: 'Anti-Aging', img: '/gallery/gallery-4.png' },
+  { label: 'Clinical Care', img: '/gallery/gallery-5.png' },
+  { label: 'Aesthetic Procedure', img: '/gallery/gallery-6.png' },
+  { label: 'Skincare Products', img: '/gallery/gallery-7.png' },
+  { label: 'Dermatology', img: '/gallery/gallery-8.png' },
 ]
 
 export function Gallery() {

@@ -3,19 +3,19 @@ const services = [
     title: 'Laser Hair Removal',
     desc: 'Safe, FDA-approved laser technology for permanent hair reduction across all skin types. Painless, precise, and effective.',
     tag: 'Most Popular',
-    img: 'https://images.pexels.com/photos/5619448/pexels-photo-5619448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    img: '/treatment/treatment-1.png',
   },
   {
     title: 'Anti-Aging Treatments',
     desc: 'Botox, fillers, and thread lifts tailored to restore youthful contours. Personalized treatment plans for natural-looking results.',
     tag: 'Signature',
-    img: 'https://images.pexels.com/photos/32260064/pexels-photo-32260064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    img: '/treatment/treatment-2.png',
   },
   {
     title: 'Skin & VD Care',
     desc: 'Comprehensive diagnosis and treatment for acne, eczema, psoriasis, pigmentation, and all dermatological conditions.',
     tag: 'Medical',
-    img: 'https://images.pexels.com/photos/7581072/pexels-photo-7581072.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    img: '/treatment/treatment-3.png',
   },
 ]
 
