@@ -32,7 +32,11 @@ export default function App() {
       </main>
       <Footer />
       <div className="demo-banner">
-        Demo concept for Dr. Tasnim Khan — Laser Chain Skin Center. This is a mockup website.
+        {/* Demo concept for Dr. Tasnim Khan — Laser Chain Skin Center. This is a mockup website. */}
+        Book your appointment today  📞  01707063506
+         <br />
+        📍 Laser Chain Skin Center
+            Level 5, Shaptak Square, Road No. 27 (Old) / 16 (New), Dhanmondi, Dhaka     
       </div>
     </div>
   )
