@@ -23,15 +23,15 @@ export function Location({ onBookClick }: LocationProps) {
             <div className="location__detail">
               <div className="location__detail-icon">&#9873;</div>
               <div>
-                <div className="location__detail-label">Address</div>
-                <div className="location__detail-value">Level 5, Dhanmondi, Dhaka, Bangladesh</div>
+                <div className="location__detail-label">📍Address</div>
+                <div className="location__detail-value"> Shaptak Square, Road No. 27 (Old) / 16 (New), Dhanmondi, Dhaka</div>
               </div>
             </div>
             <div className="location__detail">
               <div className="location__detail-icon">&#9742;</div>
               <div>
-                <div className="location__detail-label">Appointments</div>
-                <div className="location__detail-value">+880 1XXX-XXXXXX</div>
+                <div className="location__detail-label">📞 Appointment Book করতে কল করুন এখনই:</div>
+                <div className="location__detail-value"> ‪+8801707063506‬</div>
               </div>
             </div>
             <div className="location__hours">
