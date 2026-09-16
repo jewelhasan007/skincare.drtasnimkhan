@@ -212,39 +212,56 @@ button {
 /* ==================== HERO ==================== */
 .hero {
   position: relative;
-  min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 7rem 2rem 4rem;
+  align-items: stretch;
+  min-height: 90vh;
   overflow: hidden;
 }
 
+/* Left text panel — dark bg so white text stays readable */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 4rem;
+  background: var(--primary-800);
+}
+
+/* Right-side image panel */
 .hero__bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+  position: relative;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
 }
 
 .hero__bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.80);
+  object-position: center;
+  display: block;
 }
 
+/* Subtle gradient so the image edge blends into the dark panel */
 .hero__bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(31, 66, 62, 0.72) 0%, rgba(30, 28, 26, 0.5) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(31, 66, 62, 0.35) 0%,
+    rgba(31, 66, 62, 0) 18%
+  );
+  pointer-events: none;
 }
 
-.hero__content {
-  position: relative;
-  z-index: 1;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  width: 100%;
+/* Not used in split layout, kept hidden to avoid affecting other sections */
+.hero__overlay {
+  display: none;
 }
 
 .hero__eyebrow {
@@ -260,12 +277,11 @@ button {
 }
 
 .hero__title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
   font-weight: 600;
   color: var(--neutral-0);
-  line-height: 1.1;
+  line-height: 1.15;
   margin-bottom: 1.25rem;
-  max-width: 720px;
   opacity: 0;
   animation: fadeUp 800ms 400ms forwards;
 }
@@ -276,9 +292,9 @@ button {
 }
 
 .hero__subtitle {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: rgba(255, 255, 255, 0.82);
-  max-width: 520px;
+  max-width: 480px;
   margin-bottom: 2rem;
   font-weight: 300;
   line-height: 1.7;
@@ -330,9 +346,9 @@ button {
 .hero__scroll {
   position: absolute;
   bottom: 2rem;
-  left: 50%;
+  left: 25%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.75rem;
   letter-spacing: 0.1em;
@@ -358,6 +374,28 @@ button {
 @keyframes bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero__content {
+    width: 100%;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero__bg {
+    width: 100%;
+    height: 320px;
+  }
+
+  .hero__scroll {
+    left: 50%;
+  }
 }
 
 /* ==================== SECTION BASE ==================== */
@@ -1023,10 +1061,6 @@ button {
     padding: 3.5rem 1.25rem;
   }
 
-  .hero {
-    padding: 6rem 1.25rem 3rem;
-  }
-
   .credentials__inner {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -1058,4 +1092,3 @@ button {
     text-align: center;
   }
 }
-
